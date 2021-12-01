@@ -1,9 +1,31 @@
-function seed() {}
+function seed(arguments) {
+  const args = []
+  for (let i = 0; i < arguments.length; i++) {
+    args.push(arguments[i]);
+  }
+  return args
+}
+// console.log(seed(1,2,3));
 
-function same([x, y], [j, k]) {}
+function same([x, y], [j, k]) {
+  if(x===j && y===k) {
+    return true
+  }
+  else {
+    return false
+  }
+}
 
 // The game state to search for `cell` is passed as the `this` value of the function.
-function contains(cell) {}
+function contains(cell) {
+  const livingCells = [[3,4], [4,4]]
+  const result = livingCells.filter(calidate);
+  function checkAdult(age) {
+    return age >= 18;
+  }
+
+  
+}
 
 const printCell = (cell, state) => {};
 
